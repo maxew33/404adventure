@@ -6,7 +6,7 @@
 }
 
 body {
-  color: hsl(120deg, 100%, 100%);
+  color: hsl(120deg, 100%, 50%);
   text-shadow: 0 0 2px hsla(120deg, 100%, 100%, 0.1);
 }
 body::after {
@@ -57,7 +57,7 @@ header {
   left: 0;
   border: none;
   background: none;
-  color: hsl(120deg, 100%, 100%);
+  color: hsl(120deg, 100%, 50%);
   text-shadow: 0 0 2px hsla(120deg, 100%, 100%, 0.1);
   width: 0.75rem;
   height: 1.5rem;
@@ -76,8 +76,8 @@ header {
   height: 1.5rem;
   width: 0.75rem;
   border-radius: 1px;
-  background: hsl(120deg, 100%, 100%);
-  box-shadow: 0 0 2px hsl(120deg, 100%, 100%);
+  background: hsl(120deg, 100%, 50%);
+  box-shadow: 0 0 2px hsl(120deg, 100%, 50%);
   -webkit-animation: blink 1s step-end infinite;
           animation: blink 1s step-end infinite;
 }
