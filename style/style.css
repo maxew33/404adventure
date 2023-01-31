@@ -7,7 +7,7 @@
 
 body {
   color: hsl(120deg, 100%, 50%);
-  text-shadow: 0 0 2px hsla(120deg, 100%, 100%, 0.1);
+  text-shadow: 0 0 1px hsl(120deg, 100%, 70%);
 }
 body::after {
   content: "";
@@ -16,7 +16,7 @@ body::after {
   left: 0;
   height: 100vh;
   width: 100vw;
-  background: repeating-linear-gradient(rgba(0, 0, 0, 0.3333333333), hsla(120deg, 100%, 50%, 0.3) 1px 3px, rgba(0, 0, 0, 0.3333333333) 4px 8px), radial-gradient(circle at center, hsl(120deg, 100%, 30%), rgba(0, 0, 0, 0)), #222;
+  background: repeating-linear-gradient(rgba(0, 0, 0, 0.3333333333), hsla(120deg, 100%, 50%, 0.1) 1px 3px, rgba(0, 0, 0, 0.3333333333) 4px 8px), radial-gradient(circle at center, hsla(120deg, 100%, 50%, 0.5), hsla(120deg, 100%, 50%, 0.1)), #000;
   z-index: -1;
 }
 
@@ -58,7 +58,7 @@ header {
   border: none;
   background: none;
   color: hsl(120deg, 100%, 50%);
-  text-shadow: 0 0 2px hsla(120deg, 100%, 100%, 0.1);
+  text-shadow: 0 0 2px transparent;
   width: 0.75rem;
   height: 1.5rem;
   font-size: 1.5rem;
@@ -71,6 +71,7 @@ header {
 .answer-container.active::after {
   content: "";
   position: absolute;
+  pointer-events: none;
   top: 0;
   left: 0;
   height: 1.5rem;
@@ -88,8 +89,8 @@ header {
     box-shadow: 0 0 2px 2px hsl(120deg, 100%, 50%);
   }
   50% {
-    background: hsla(120deg, 100%, 100%, 0.1);
-    box-shadow: 0 0 2px 2px hsla(120deg, 100%, 100%, 0.1);
+    background: transparent;
+    box-shadow: 0 0 2px 2px transparent;
   }
 }
 
@@ -99,8 +100,8 @@ header {
     box-shadow: 0 0 2px 2px hsl(120deg, 100%, 50%);
   }
   50% {
-    background: hsla(120deg, 100%, 100%, 0.1);
-    box-shadow: 0 0 2px 2px hsla(120deg, 100%, 100%, 0.1);
+    background: transparent;
+    box-shadow: 0 0 2px 2px transparent;
   }
 }
 .hidden {
